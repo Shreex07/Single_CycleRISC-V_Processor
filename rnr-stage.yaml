@@ -12,7 +12,7 @@
 # 4. A module that instantiates other modules (id_stage, ex_stage, single_cycle_riscv) needs those
 #    modules listed here too.
 yaml_version: 1
-stage: fetch
+stage: execute
 
 modules:
   if_stage:           {source_files: [IF_Stage/rtl.sv]}
@@ -24,5 +24,5 @@ modules:
   alu:                {source_files: [ALU/rtl.sv]}
   alu_control:        {source_files: [ALU_Control/rtl.sv]}
   ex_stage:           {source_files: [EX_Stage/rtl.sv]}
-  wb_stage:           {source_files: [WB_Stage/rtl.sv]}
-  single_cycle_riscv: {source_files: [Single_Cycle_RISCV/rtl.sv]}
+#  wb_stage:           {source_files: [WB_Stage/rtl.sv]}
+#  single_cycle_riscv: {source_files: [Single_Cycle_RISCV/rtl.sv]}
